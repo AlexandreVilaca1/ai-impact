@@ -90,11 +90,14 @@ risk category.
 ## Running the notebooks
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install pandas numpy matplotlib seaborn scikit-learn mlxtend jupyter
 jupyter notebook
 ```
+
+On Windows, use `python` instead of `python3` and `.venv\Scripts\activate` instead of the
+`source` line.
 
 Each notebook loads `AI_Impact_on_Jobs_2030.csv` from the project folder and runs from top
 to bottom.
